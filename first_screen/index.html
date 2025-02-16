@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Medicalshala">
+        </div>
+        <button class="btn">Schedule Appointment</button>
+        <ul class="menu">
+            <li><i class="fas fa-calendar"></i> Appointment</li>
+            <li><i class="fas fa-file-medical"></i> Encounter</li>
+            <li><i class="fas fa-inbox"></i> Inbox</li>
+            <li><i class="fas fa-robot"></i> Ask AI</li>
+            <li class="active"><i class="fas fa-prescription"></i> Prescription</li>
+            <li><i class="fas fa-user-md"></i> Doctor & Clinic</li>
+            <li><i class="fas fa-bed"></i> Bed Allotment</li>
+            <li><i class="fas fa-money-bill-wave"></i> Payment</li>
+            <li><i class="fas fa-history"></i> History</li>
+            <li><i class="fas fa-bullhorn"></i> Campaign</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>Prescription Recommendation</h2>
+            <div class="user-profile">
+                <i class="fas fa-bars"></i>
+                <img src="images/user.png" alt="User">
+            </div>
+        </header>
+
+        <section class="form-section">
+            <h3>Doctor Details</h3>
+            <div class="form-group">
+                <input type="text" placeholder="Doctor's Name">
+                <input type="text" placeholder="Hospital's Name">
+            </div>
+            <div class="form-group">
+                <input type="date">
+                <input type="time">
+            </div>
+
+            <h3>Patient Details</h3>
+            <div class="form-group">
+                <input type="text" placeholder="Patient's Name">
+                <input type="number" placeholder="Age">
+                <label>Gender:</label>
+                <input type="radio" name="gender"> Male
+                <input type="radio" name="gender"> Female
+            </div>
+            <textarea placeholder="Reason for patient's visit"></textarea>
+
+            <h3>Medication Details</h3>
+            <div class="form-group">
+                <input type="text" placeholder="Medication Recommendation">
+                <input type="number" placeholder="0 - 0 - 0">
+            </div>
+            <div class="form-group">
+                <label>Time:</label>
+                <input type="radio" name="time"> After Meal
+                <input type="radio" name="time"> Before Meal
+            </div>
+            <textarea placeholder="Notes"></textarea>
+
+            <h3>Follow up appointment</h3>
+            <div class="follow-buttons">
+                <button>None</button>
+                <button>After 3 days</button>
+                <button>After a week</button>
+                <button>After 2 weeks</button>
+                <button>After a month</button>
+                <button>Customize</button>
+            </div>
+
+            <button class="save-btn">Save</button>
+        </section>
+    </div>
+</body>
+</html>
